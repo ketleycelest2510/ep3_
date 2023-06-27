@@ -1,0 +1,40 @@
+header{
+    grid-area: cabe;
+}
+
+main{
+    grid-area: prin;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    " cabe cabe cabe cabe "
+    " brac prin prin prin "
+    " roda roda roda roda ";
+    grid-template-columns: 20% auto;
+    grid-template-rows: 25% 200px 25%;
+}
+.logo{
+    border-radius: 30%;
+    transition: 1s;
+    width: 10%;
+}
+nav{
+    margin-top: 1rem;
+}
+nav li{
+    display: inline;
+    margin: 1rem;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:rgb(103, 24, 148), rgb(255, 255, 255), rgb(147, 96, 170);
+    border: solid rgb(0 0 0);
+    background-color: rgb(129, 44, 179);
+}
+header{
+    display: flex;
+
+}
