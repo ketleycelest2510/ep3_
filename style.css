@@ -1,40 +1,93 @@
-header{
+header {
     grid-area: cabe;
+    background-color: rgb(171, 117, 207);
+    position: relative;
 }
-
-main{
+main {
     grid-area: prin;
+    background-color: rgb(180, 83, 191);
 }
-
+aside{
+    grid-area: prin;
+    background-color: rgb(231, 112, 163);
+}
+footer{
+    grid-area: roda;
+    background-color: rgb(171, 117, 207);
+}
 body{
     display: grid;
     grid-template-areas:
-    " cabe cabe cabe cabe "
-    " brac prin prin prin "
-    " roda roda roda roda ";
-    grid-template-columns: 20% auto;
-    grid-template-rows: 25% 200px 25%;
+    " cabe cabe cabe "
+    " brac prin prin "
+    " roda roda roda ";
+    grid-template-columns: 180px auto;
+    grid-template-rows: 210px auto 200px;
 }
 .logo{
-    border-radius: 30%;
+    border-radius: 10%;
     transition: 1s;
     width: 10%;
 }
-nav{
-    margin-top: 1rem;
-}
 nav li{
     display: inline;
-    margin: 1rem;
+    margin: 50px;
+    border: 15px;
 }
 nav a{
     text-decoration: none;
-    font-size: 1.5rem;
-    color:rgb(103, 24, 148), rgb(255, 255, 255), rgb(147, 96, 170);
-    border: solid rgb(0 0 0);
-    background-color: rgb(129, 44, 179);
+    font-size: 1,5rem;
+    color: rgb(255, 255, 255);
+    border: solid rgb(170, 23, 207);
+    background-color: rgb(116, 74, 130);
+    transition: 1s;
+}
+nav{
+    position: absolute;
+    right: 10px;   
+}
+nav a:hover{
+    font-size: 1,1rem;
+    color: white;
+    border: solid rgb(170, 23, 207);
+    background: rgb(116, 74, 130);
 }
 header{
     display: flex;
-
+    padding: 1rem;
+}
+.caixa_mae{
+    border: solid 2px  rgb(82, 28, 79);
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 3px 6px 9px rgb(164, 78, 198);
+    transition: 3s;
+}
+.card img{
+    width: 250px;
+}
+.card a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.card :hover{
+    background-color: rgb(145, 33, 173);
 }
