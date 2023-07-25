@@ -1,6 +1,6 @@
 header {
     grid-area: cabe;
-    background-color: rgb(171, 117, 207);
+    background-image: linear-gradient(to right, rgb(241, 127, 51), rgb(216, 49, 231));
     position: relative;
 }
 main {
@@ -9,7 +9,7 @@ main {
 }
 aside{
     grid-area: prin;
-    background-color: rgb(231, 112, 163);
+    background-color: rgb(164, 112, 231);
 }
 footer{
     grid-area: roda;
