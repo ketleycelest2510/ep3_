@@ -3,15 +3,15 @@ header {
     background-image: linear-gradient(to right, rgb(241, 127, 51), rgb(216, 49, 231));
     position: relative;
 }
-main {
+main { 
     grid-area: prin;
-    background-color: rgb(180, 83, 191);
+    background-color:rgb(86, 213, 245);
 }
-aside{
-    grid-area: prin;
-    background-color: rgb(164, 112, 231);
+aside { 
+    grid-area: brac;
+    background-color: rgb(248, 124, 207);
 }
-footer{
+footer {
     grid-area: roda;
     background-image: linear-gradient(to right, rgb(241, 127, 51), rgb(216, 49, 231));
 }
@@ -42,4 +42,23 @@ header{
     display: flex;
     padding: 1rem;
 }
-
+.caixa_mae{
+    border: 2px solid rgb(196, 41, 196);
+}
+.card {
+    border: rgb(196, 41, 196);
+    width: 300px;
+    height: 300px;
+}
+.card img{
+    width: 280px;
+}
+.card a{
+    background-color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 15px;
+    text-align: center;
+    padding: 5px;
+}
+  
