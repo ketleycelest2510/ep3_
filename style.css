@@ -1,26 +1,26 @@
 header {
     grid-area: cabe;
-    background-image: linear-gradient(to right, rgb(241, 127, 51), rgb(216, 49, 231));
+    background-image: linear-gradient(to right, rgb(240, 102, 10), rgb(192, 102, 233));
     position: relative;
 }
 main { 
     grid-area: prin;
-    background-color:rgb(86, 213, 245);
+    background-color: rgb(243, 72, 186);
 }
 aside { 
     grid-area: brac;
-    background-color: rgb(248, 124, 207);
+    background-color:  rgb(51, 187, 241);
 }
 footer {
     grid-area: roda;
-    background-image: linear-gradient(to right, rgb(241, 127, 51), rgb(216, 49, 231));
+    background-image: linear-gradient(to right, rgb(181, 44, 245), rgb(218, 161, 245));
 }
 body{
     display: grid;
     grid-template-areas:
-    " cabe cabe cabe "
-    " brac prin prin "
-    " roda roda roda ";
+    " cabe cabe"
+    " brac prin"
+    " roda roda";
     grid-template-columns: 180px auto;
     grid-template-rows: 210px auto 200px;
 }
@@ -43,7 +43,7 @@ header{
     padding: 1rem;
 }
 .caixa_mae{
-    border: 2px solid rgb(196, 41, 196);
+    border: 2px solid rgb(219, 39, 174);
     display: flex;
     
 }
@@ -56,7 +56,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(247, 127, 227);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 6px 9px black;
