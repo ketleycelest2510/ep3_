@@ -1,6 +1,6 @@
 header {
     grid-area: cabe;
-    background-image: linear-gradient(to right, rgb(240, 102, 10), rgb(192, 102, 233));
+    background-image: linear-gradient(to right, rgb(252, 129, 47), rgb(192, 102, 233));
     position: relative;
 }
 main { 
@@ -13,14 +13,14 @@ aside {
 }
 footer {
     grid-area: roda;
-    background-image: linear-gradient(to right, rgb(181, 44, 245), rgb(218, 161, 245));
+    background-image: linear-gradient(to right, rgb(236, 115, 34), rgb(192, 102, 233));
 }
 body{
     display: grid;
     grid-template-areas:
-    " cabe cabe"
-    " brac prin"
-    " roda roda";
+    " cabe cabe cabe"
+    " brac prin prin"
+    " roda roda roda";
     grid-template-columns: 180px auto;
     grid-template-rows: 210px auto 200px;
 }
@@ -50,7 +50,7 @@ header{
 .card {
     border: rgb(41, 51, 196);
     width: 300px;
-    height: 350px;
+    height: 450px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -62,13 +62,17 @@ header{
     box-shadow: 3px 6px 9px black;
 }
 .card img{
-    width: 280px;
+    width: 220px;
+    height: 200px;
+    align-items: center;
+    border-radius: 10px;
+
 }
 .card a{
     display: block;
     width: 100px;
-    height: 70px;
-    background-color: red;
+    height: auto;
+    background-color: rgb(255, 214, 248);
     text-align: center;
     border-radius: 20px;
     margin: 20px;
@@ -76,4 +80,16 @@ header{
 
 
 }
+.carrinho{
+    width:  7%;
+    
+}
+.favoritos{
+    width: 7%;
+   
+}
+.promocao{
+    width: 7%;
   
+}
+
