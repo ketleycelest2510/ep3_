@@ -18,9 +18,9 @@ footer {
 body{
     display: grid;
     grid-template-areas:
-    " cabe cabe cabe"
-    " brac prin prin"
-    " roda roda roda";
+    " cabe cabe cabe cabe"
+    " brac prin prin prin"
+    " roda roda roda roda";
     grid-template-columns: 180px auto;
     grid-template-rows: 210px auto 200px;
 }
@@ -28,11 +28,13 @@ body{
     border-radius: 10%;
     transition: 1s;
     width: 10%;
+   
 }
 nav li{
     display: inline;
     margin: 5px;
     border: 5px;
+
 }
 nav{
     position: absolute;
@@ -45,7 +47,10 @@ header{
 .caixa_mae{
     border: 2px solid rgb(219, 39, 174);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
+
 }
 .card {
     border: rgb(41, 51, 196);
@@ -53,19 +58,19 @@ header{
     height: 450px;
     margin: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     justify-content: center;
     background-color: rgb(247, 127, 227);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 6px 9px black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(197, 34, 143);
 }
 .card img{
     width: 220px;
     height: 200px;
-    align-items: center;
-    border-radius: 10px;
+    align-items: flex;
+    border-radius: 20px;
 
 }
 .card a{
@@ -75,21 +80,16 @@ header{
     background-color: rgb(255, 214, 248);
     text-align: center;
     border-radius: 20px;
-    margin: 20px;
     padding: 5px;
-
-
 }
 .carrinho{
     width:  7%;
-    
 }
 .favoritos{
     width: 7%;
-   
 }
 .promocao{
     width: 7%;
-  
 }
+
 
