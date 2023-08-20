@@ -10,52 +10,51 @@ main {
 aside { 
     grid-area: brac;
     background-color:  rgb(51, 187, 241);
+    font-family: monospace;
 }
 footer {
     grid-area: roda;
-    background-image: linear-gradient(to right, rgb(236, 115, 34), rgb(192, 102, 233));
+    background-color: rgb(165, 204, 236);
 }
 body{
     display: grid;
     grid-template-areas:
-    " cabe cabe cabe cabe"
-    " brac prin prin prin"
-    " roda roda roda roda";
+    " cabe cabe cabe cabe "
+    " brac prin prin prin "
+    " roda roda roda roda ";
     grid-template-columns: 180px auto;
     grid-template-rows: 210px auto 200px;
 }
 .logo{
     border-radius: 10%;
     transition: 1s;
-    width: 10%;
-   
+    width: 12%;
+
 }
 nav li{
     display: inline;
-    margin: 5px;
-    border: 5px;
-
+    position:relative;
+    align-items: center;
 }
 nav{
-    position: absolute;
-    right: 5px;   
+    display: flex;/* para ser flexivel*/
+    text-align: center;/* se posicionar no centro*/
+    position: relative;  
 }
 header{
     display: flex;
     padding: 1rem;
+    align-items: center;
 }
+
 .caixa_mae{
-    border: 2px solid rgb(219, 39, 174);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-
 }
 .card {
-    border: rgb(41, 51, 196);
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 410px;
     margin: 10px;
     display: flex;
     flex-direction: column ;
@@ -65,13 +64,14 @@ header{
     padding: 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgb(197, 34, 143);
+    font-family: calibri;
+    flex: 10px 0px 0px 0pxpx;
 }
 .card img{
-    width: 220px;
+    width: 210px;
     height: 200px;
     align-items: flex;
     border-radius: 20px;
-
 }
 .card a{
     display: block;
@@ -81,6 +81,11 @@ header{
     text-align: center;
     border-radius: 20px;
     padding: 5px;
+    text-decoration: none;
+}
+.card:hover{
+    background-color:rgb(204, 117, 245);
+    transition: 3s;
 }
 .carrinho{
     width:  7%;
@@ -91,5 +96,70 @@ header{
 .promocao{
     width: 7%;
 }
+footer{
+    text-align: center;
+    display: flex;
 
-
+}
+footer li{
+    display: inline;
+    margin: 0 0 0 100px;
+}
+footer a{
+    text-decoration: none; 
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    border: solid rgb(255, 255, 255);
+    background: rgb(61, 223, 252);
+    transition: 1s;
+}
+.card2{
+    width: 570px;
+    height: 320px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 127, 227);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(197, 34, 143);
+}
+.card2 img{
+    width: 210px;
+    height: 200px;
+    align-items: flex;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+section{
+    display: flex;
+}
+section p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+}
+.card2 a {
+    display: block;
+    border-radius: 12px;
+    background-color: rgb(243, 29, 172);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    transition: 0.5s;
+    text-align: center;
+}
+.card2 a{
+    display: inline;
+    position:relative;
+    align-items: center;
+}
+.card2 nav{
+    display: flex;/* para ser flexivel*/
+    text-align: center;/* se posicionar no centro*/
+    position: relative;  
+}
+button img{
+    width: 20px;
+}
