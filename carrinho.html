@@ -1,166 +1,79 @@
-header {
-    grid-area: cabe;
-    background-image: linear-gradient(to right, rgb(252, 129, 47), rgb(192, 102, 233));
-    position: relative;
-}
-main { 
-    grid-area: prin;
-    background-color: rgb(243, 72, 186);
-}
-aside { 
-    grid-area: brac;
-    background-color:  rgb(51, 187, 241);
-    font-family: monospace;
-}
-footer {
-    grid-area: roda;
-    background-color: rgb(165, 204, 236);
-}
-body{
-    display: grid;
-    grid-template-areas:
-    " cabe cabe cabe cabe "
-    " brac prin prin prin "
-    " roda roda roda roda ";
-    grid-template-columns: 180px auto;
-    grid-template-rows: 210px auto 200px;
-}
-.logo{
-    border-radius: 10%;
-    transition: 1s;
-    width: 8%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudio Music</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="fundo1">
 
-}
-nav li{
-    display: inline;
-    position:relative;
-    align-items: center;
-}
-nav{
-    display: flex;/* para ser flexivel*/
-    text-align: center;/* se posicionar no centro*/
-    position: relative;  
-}
-header{
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-}
+  <header><!--cabecario-->
+      <img class="logo" src="imagem/logo.jpg" alt="logotipo">
+      
+      <nav>
+        <ul>
+          <li><a href="promocao.html" target="_blank"><img  class="promocao" src="imagem/promocao2.png" alt="promocao"></a></li>
+          <li><a href="favoritos.html" target="_blank"><img  class="favoritos" src="imagem/favoritos2.png" alt="favoritos"></a></li>
+          <li><a href="carrinho.html" target="_blank"><img  class="carrinho" src="imagem/carrinho.png" alt="carrinho"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section>
+         <!--card-->
+            <div class="card2">
+                <img src="imagem/hello.png" alt="produto1">
+            <div class="texto">
+                <h1> descrição do produto</h1>
+                <p>
+                    The Second Step: Chapter Two é a segunda peça estendida (EP) da boy band sul-coreana Treasure. O EP 
+                    foi lançado pela YG Entertainment em 4 de outubro de 2022.
+                    Este lançamento marca o primeiro do Treasure como um grupo de 10 membros, já que Bang Ye Dam e Mashiho 
+                    estavam em um hiato temporário na época e, posteriormente, deixaram o grupo em 8 de novembro de 2022.
+                </p>
+                <h2>158,00</h2>
+            </div>
+    
+                <nav>
 
-.caixa_mae{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.card {
-    width: 250px;
-    height: 410px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(247, 127, 227);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgb(197, 34, 143);
-    font-family: calibri;
-    flex: 10px 0px 0px 0pxpx;
-}
-.card img{
-    width: 210px;
-    height: 200px;
-    align-items: flex;
-    border-radius: 20px;
-}
-.card a{
-    display: block;
-    width: 100px;
-    height: auto;
-    background-color: rgb(255, 214, 248);
-    text-align: center;
-    border-radius: 20px;
-    padding: 5px;
-    text-decoration: none;
-}
-.card:hover{
-    background-color:rgb(204, 117, 245);
-    transition: 3s;
-}
-.carrinho{
-    width:  7%;
-}
-.favoritos{
-    width: 7%;
-}
-.promocao{
-    width: 7%;
-}
-footer{
-    text-align: center;
-    display: flex;
+                    <a href="master.html" target="_blank"><img  class="master" src="imagem/master.png" alt="master"></a></li>
+                    <a href="hiper.html" target="_blank"><img  class="hiper" src="imagem/hiper.png" alt="hiper"></a></li>
+                    <a href="itau.html" target="_blank"><img  class="itau" src="imagem/itau.png" alt="itau"></a></li>
+                    
+                </nav>
 
-}
-footer li{
-    display: inline;
-    margin: 0 0 0 100px;
-}
-footer a{
-    text-decoration: none; 
-    font-size: 1.4rem;
-    color: rgb(0, 0, 0);
-    border: solid rgb(255, 255, 255);
-    background: rgb(61, 223, 252);
-    transition: 1s;
-}
-.card2{
-    width: 570px;
-    height: 320px;
-    margin: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(247, 127, 227);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgb(197, 34, 143);
-    flex-direction: column;
-}
-.produto1{
-    width: 210px;
-    height: 200px;
-    align-items: flex;
-    border-radius: 20px;
-    margin-right: 20px;
-}
-section{
-    display: flex;
-}
-section p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 300px;
-}
-.card2 a {
-    display: block;
-    border-radius: 12px;
-    background-color: rgb(243, 29, 172);
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    width: 100px;
-    text-decoration: none;
-    transition: 0.5s;
-    text-align: center;
-}
-.card2 a{
-    display: inline;
-    position:relative;
-    align-items: center;
-}
-.card2 nav{
-    display: flex;/* para ser flexivel*/
-    text-align: center;/* se posicionar no centro*/
-    position: relative;  
-}
-button img{
-    width: 20px;
-}
+            </div>
+
+        <!--fim do card-->
+        </section>     
+    </main>
+    <aside>
+          <p><h2>
+            “Mesmo se você for embora por um instante
+          Você vai procurar por isso de novo
+          Um menu quente que, a partir de agora, não vai mais esfriar
+          Grave esses sabores no seu paladar”
+          God’s Menu – Stray Kids
+          </h2></p>
+          
+          <P><h2>
+          "Estou preparado para lutar
+          antes mesmo da cortina abrir,
+          aproveite essa intensa tensão,
+          Agora é hora do meu show."
+          En Guarde - Boys Planet
+          </P></h2>
+          
+    </aside>    
+    <footer>
+        <img class="logorodape" src="imagem/logo.jpg" alt="logo">
+        <div>
+            <ul>
+                <li> <a href="https://www.instagram.com/ketley_celestino/" target="_blank">@Ketleycelestino</a></li>
+                <li> <a href="https://github.com/ketleycelest2510" target="_blank">@ketleycelest2510</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
