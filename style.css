@@ -28,7 +28,7 @@ body{
 .logo{
     border-radius: 10%;
     transition: 1s;
-    width: 12%;
+    width: 8%;
 
 }
 nav li{
@@ -124,8 +124,9 @@ footer a{
     padding: 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgb(197, 34, 143);
+    flex-direction: column;
 }
-.card2 img{
+.produto1{
     width: 210px;
     height: 200px;
     align-items: flex;
