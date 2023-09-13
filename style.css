@@ -28,7 +28,7 @@ body{
 .logo{
     border-radius: 10%;
     transition: 1s;
-    width: 8%;
+    width: 13%;
 
 }
 nav li{
@@ -49,10 +49,10 @@ header{
 
 .caixa_mae{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.card {
+.card { /*pagina principal*/
     width: 250px;
     height: 410px;
     margin: 10px;
@@ -66,6 +66,7 @@ header{
     box-shadow: 10px 10px 10px rgb(197, 34, 143);
     font-family: calibri;
     flex: 10px 0px 0px 0pxpx;
+    flex-wrap: wrap;
 }
 .card img{
     width: 210px;
@@ -87,8 +88,8 @@ header{
     background-color:rgb(204, 117, 245);
     transition: 3s;
 }
-.carrinho{
-    width:  7%;
+.carrinho{ /*header*/
+    width:  7%; 
 }
 .favoritos{
     width: 7%;
@@ -113,7 +114,7 @@ footer a{
     background: rgb(61, 223, 252);
     transition: 1s;
 }
-.card2{
+.card2{ /*descrição*/
     width: 570px;
     height: 320px;
     margin: 50px;
@@ -133,34 +134,62 @@ footer a{
     border-radius: 20px;
     margin-right: 20px;
 }
-section{
-    display: flex;
+.card2 img{
+width: 200x;
+height: 200px;
+display: flex;
 }
-section p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 300px;
-}
-.card2 a {
+
+.card2 a{
     display: block;
-    border-radius: 12px;
-    background-color: rgb(243, 29, 172);
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    width: 100px;
-    text-decoration: none;
-    transition: 0.5s;
+    width: 150px;
+    height: auto;
+    background-color: rgb(255, 214, 248);
     text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+.container{ /*carrinho*/
+    width: 570px;
+    height: 320px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 127, 227);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(197, 34, 143);
+    flex-direction: column;
+} 
+.container a{
+    display: block;
+    width: 150px;
+    height: auto;
+    background-color: rgb(255, 214, 248);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+.container img {
+    height: 200px;
 }
 .card2 a{
-    display: inline;
-    position:relative;
-    align-items: center;
+    display: block;
+    width: 150px;
+    height: auto;
+    background-color: rgb(255, 214, 248);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
 }
-.card2 nav{
-    display: flex;/* para ser flexivel*/
-    text-align: center;/* se posicionar no centro*/
-    position: relative;  
+.master{
+    height: 50px;
 }
-button img{
-    width: 20px;
+.hiper{
+    height: 50px;
 }
+.itau{
+    height: 50px;
+}
+
+
